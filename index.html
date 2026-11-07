@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Semáforo Manual</title>
+<!-- Bootstrap 4.0 CSS para os botões -->
+<link rel="stylesheet" href="https://bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<!-- O teu estilo personalizado -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container text-center main-box">
+<h1 class="text-white mb-4">Semáforo Manual</h1>
+
+<!-- Estrutura do Semáforo -->
+<div class="semaforo-estrutura">
+<div id="luz-vermelha" class="luz"></div>
+<div id="luz-amarela" class="luz"></div>
+<div id="luz-verde" class="luz"></div>
+</div>
+
+<!-- Painel de Controlo (Botões com Bootstrap) -->
+<div class="mt-4">
+<button onclick="ligarVermelho()" class="btn btn-danger btn-lg mx-1">Ligar Vermelho</button>
+<button onclick="ligarAmarelo()" class="btn btn-warning btn-lg mx-1 text-white">Amarelo</button>
+<button onclick="ligarVerde()" class="btn btn-success btn-lg mx-1">Verde</button>
+<button onclick="desligarSemaforo()" class="btn btn-secondary btn-lg mx-1">Desligar</button>
+</div>
+</div>
+
+<!-- O  script lógico -->
+<script src="script.js"></script>
+</body>
+</html>
